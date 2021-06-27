@@ -9,7 +9,7 @@
 5. Problem
 ## III. Linked Lists
 1. Introduction
-2. Linked vs Unlinked \\
-    a. Advantages \\
-    b. Disadvantages
+2. Linked vs Unlinked
+    2.1. Advantages
+    2.2. Disadvantages
 ## IV. Trees
