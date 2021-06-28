@@ -1,7 +1,7 @@
 # Data Structures Tutorial - Outline
 ## I. Welcome
 1. Introduction
-## II. Stacks
+## II. [Stacks]
 1. Introduction
 2. Functions
 3. Implementation
