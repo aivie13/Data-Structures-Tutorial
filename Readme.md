@@ -4,6 +4,7 @@
 ## II. [Stacks](stacks.md)
 1. Introduction
 2. Functions
+3. Efficiency
 3. Implementation
 4. Example
 5. Problem
