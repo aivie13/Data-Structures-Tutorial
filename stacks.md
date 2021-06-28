@@ -34,6 +34,7 @@ This function would have an efficiency *O(n)* where *n* is the size of the array
 * Factorial *O(n!)*
 
 ![Big O Graph](assets/bigO.png)
+<a href="url"><img src="assets/bigO.png" height="auto" width="200" style="border-radius:50%"></a>
 
 Here's another example program, this one will search for a specified number in a sorted list
 
