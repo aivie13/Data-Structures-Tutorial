@@ -34,7 +34,6 @@ This function would have an efficiency *O(n)* where *n* is the size of the array
 * Factorial *O(n!)*
 
 ![Big O Graph](assets/bigO.png)
-<a href="url"><img src="assets/bigO.png" height="auto" width="200" style="border-radius:50%"></a>
 
 Here's another example program, this one will search for a specified number in a sorted list
 
@@ -53,4 +52,73 @@ def binary_search(arr, low, high, x):
 ```
 
 The program will successively split the list in half and search the smaller half. In a worst case scenario, the function will complete in time *O(log n)*
+
+Going back to the stack, the great thing about them is that all of the built in functions have efficiency *O(1)*.  The main drawback, however, is that its very inefficient to get to anyhting burried deeper into the stack.  They have a selective use case of anything that benefits from a FIFO (first in, first out) model.
+
+## Implementation
+
+Below we will implement the stack structure using python lists.
+
+```
+class Stack: 
+    def __init__(self): 
+        self.elements = [] 
+    
+    def push(self, data): 
+        self.elements.append(data) 
+    
+    def pop(self): 
+        return self.elements.pop() 
+        
+    def peek(self): 
+        return self.elements[-1] 
+        
+    def is_empty(self): 
+        return len(self.elements) == 0
+```
+
+To test the the code we will run the following:
+
+```
+stack = Stack()
+
+## checking is_empty method -> true
+print(stack.is_empty())
+
+## pushing the elements
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.push(4)
+stack.push(5)
+
+## again checking is_empty method -> false
+print(stack.is_empty())
+
+## printing the topmost element of the stack -> 5
+print(stack.peek())
+
+## popping the topmost element -> 5
+stack.pop()
+
+## checking the topmost element using peek method -> 4
+print(stack.peek())
+
+## popping all the elements
+stack.pop()
+stack.pop() 
+stack.pop() 
+stack.pop() 
+
+## checking the is_empty method for the last time -> true
+print(stack.is_empty())
+```
+Which returns
+```
+True
+False
+5
+4
+True
+```
 
