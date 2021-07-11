@@ -8,7 +8,7 @@
 3. Implementation
 4. Example
 5. Problem
-## III. Linked Lists
+## III. [Linked Lists](linkedLists.md)
 1. Introduction
 2. Linked vs Unlinked
 3. Example 
