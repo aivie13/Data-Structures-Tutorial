@@ -89,3 +89,5 @@ for i in range(1, 23, 2):
     l.printList()
     l.printMiddle()
 ```
+
+As we can see, it's not as simple using a linked list.  You can't just pop out the value at an index, you have to iterate through every entry.  
