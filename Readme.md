@@ -15,7 +15,7 @@
 4. Problem
 ## IV. [Trees](trees.md)
 1. Introduction
-3. Functions
 4. Recursion
+3. Functions
 5. Example
 6. Problem
