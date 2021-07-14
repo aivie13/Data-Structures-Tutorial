@@ -30,3 +30,21 @@ Trees are a lot like a multidimensional singly linked list.  Trees have a series
   ...      cs101  cs112  cs113
 ```
 
+## Recursion
+
+Trees are best defined in the scope of recursion, which to understand, we must first define recursion.
+
+Recursion is a way to have a program execute multiple times in a row, similar to a loop.  While a standard loop has a known number of iterations and an unknown endpoint, a recursive call has a known endpoint and unknown number of iterations.  Let's look at an example.
+
+```
+def factorial(x):
+    if x == 1:
+        return 1
+    else:
+        return (x * factorial(x-1))
+
+num = 5
+print("The factorial of", num, "is", factorial(num))
+```
+
+If the program's input is 1, it will return 1, otherwise it will multiply the input by a new instance of the program with 1 less than the initial input.
