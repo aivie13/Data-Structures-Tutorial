@@ -13,10 +13,9 @@
 2. Linked vs Unlinked
 3. Example 
 4. Problem
-## IV. Trees
+## IV. [Trees](trees.md)
 1. Introduction
-2. Parts of a Tree
-3. Properties
+3. Functions
 4. Recursion
 5. Example
 6. Problem

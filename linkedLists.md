@@ -1,3 +1,5 @@
+# Linked Lists
+
 ## Introduction
 
 Linked lists are a lot like normal lists.  They hold an arbitrary amount of data and can index through it fairly easily.  Linked lists end up being like a chain.  Every entry knows where the next and previous item is.
@@ -5,6 +7,8 @@ Linked lists are a lot like normal lists.  They hold an arbitrary amount of data
 ## Linked vs Unlinked
 
 The difference ends up being in the linking.  In python, a standard list is a dynamic array that resizes itself as it fills up.  A linked list does not need to be resized.  Every time a new element is added, it gets linked onto the end with data for where the previous item is.  The main drawback of this implementation is that in order to search for a specific value, it is necessary to check every entry in sequential order.
+
+Linked lists can be of teh singly or doubly linked variety.  A singly linked list can only be traversed in one direction and must be started from the head, while a doubly linked list has bot a head and a tail as possible starting points and can be traversed in either direction.
 
 ## Example
 
@@ -79,7 +83,7 @@ class LinkedList:
 			iterEnd = iterEnd.next.next
 		
 		# return middle element
-		print("The middle element is ", slow.data)
+		print("The middle element is ", iterMiddle.data)
 
 
 l = LinkedList()
@@ -89,5 +93,13 @@ for i in range(1, 23, 2):
     l.printList()
     l.printMiddle()
 ```
+
+Lets quickly run through each of these functions.
+
+* *push(self, new_data)* is inserting new nodes.  It takes the current node and links it to a new node with a new data value.
+
+* *printList(self)*  will traverse the list, starting at the head. It will print the data value at each node, then a -> representing the link to the next node.
+
+* *printMiddle(self)* is where the real solution to this problem lies.  There are two iterators here, one that jumps by 2's and another that jumps by 1's.  By the time the **iterEnd** reaches the end, **iterMiddle** will have gone half as far and be at the middle, so the function prints the data stored where **iterMiddle** elds up.
 
 As we can see, it's not as simple using a linked list.  You can't just pop out the value at an index, you have to iterate through every entry.  
