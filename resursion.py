@@ -6,7 +6,9 @@ def recur_fibo(n):
    else:
        return(recur_fibo(n-1) + recur_fibo(n-2))
 
-nterms = 7
-print("Fibonacci sequence:")
-for i in range(nterms):
-    print(recur_fibo(i))
+# nterms = 7
+# print("Fibonacci sequence:")
+# for i in range(1, nterms):
+#     print(recur_fibo(i))
+print(recur_fibo(4))
+
