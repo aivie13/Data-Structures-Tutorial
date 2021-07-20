@@ -140,8 +140,10 @@ class BST:
 
 Now a very useful function for our tree would be to generate a balanced tree from a set of sorted data.  If we simply looped through the data, we would end up with a 1-dimensional linked list.  We need to find the middle of the list and set that as the root, then recursively call it for each subtree.  
 
+
+
 ## Problem
 
-Write a program to find the lowest common ancestor given 2 nodes.  Think of this as the smallets enclosing folder for 2 files in a system.
+Write a program to find the lowest common ancestor given 2 nodes.  Think of this as the smallest enclosing folder for 2 files in a system.
 
 [Solution](treeSolution.py) 

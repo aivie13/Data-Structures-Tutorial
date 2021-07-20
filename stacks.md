@@ -57,7 +57,7 @@ The program will successively split the list in half and search the smaller half
 
 Going back to the stack, the great thing about them is that all of the built in functions have efficiency *O(1)*.  The main drawback, however, is that its very inefficient to get to anyhting burried deeper into the stack.  They have a selective use case of anything that benefits from a LIFO (last in, first out) model.
 
-## Implementation
+## Example
 
 Below we will implement the stack structure using python lists.
 

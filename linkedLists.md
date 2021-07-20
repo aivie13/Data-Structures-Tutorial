@@ -125,4 +125,6 @@ Lets quickly run through each of these functions.
 As we can see, it's not as simple using a linked list.  You can't just pop out the value at an index, you have to iterate through every entry.
 ## Problem
 
-Implement a queue for a call center using a linked list.
+Implement a queue for a line using a linked list. PAtrons in the line will have 3 types of memberships: Gold, silver, or none.  Gold members have priority over silver and silver have priority over those without any membership.
+
+[Solution](linkedListSolution.py)
