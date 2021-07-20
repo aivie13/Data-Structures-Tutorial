@@ -8,7 +8,27 @@ Linked lists are a lot like normal lists.  They hold an arbitrary amount of data
 
 The difference ends up being in the linking.  In python, a standard list is a dynamic array that resizes itself as it fills up.  A linked list does not need to be resized.  Every time a new element is added, it gets linked onto the end with data for where the previous item is.  The main drawback of this implementation is that in order to search for a specific value, it is necessary to check every entry in sequential order.
 
-Linked lists can be of teh singly or doubly linked variety.  A singly linked list can only be traversed in one direction and must be started from the head, while a doubly linked list has bot a head and a tail as possible starting points and can be traversed in either direction.
+Linked lists can be of the singly or doubly linked variety.  A singly linked list can only be traversed in one direction and must be started from the head, while a doubly linked list has bot a head and a tail as possible starting points and can be traversed in either direction.
+
+The main advantage of a linked list over a dynamic array comes in adding a single item to the end of the list or the beginning of the list.  Dynamic arrays have a soft limit on size, when that limit is reached, hte array is copied into a new array with double the size.  For a linked list, this is a simple **O(1)** operation where the pointers are reassigned.  Arrays cannot add new data to or delete from the front either, again the whole array would need to be copied into a new one.
+
+## Functions
+
+* **insert_head(value)** - takes a value and makes it the new head of the list, linking it to the old head and the old head bacck to it in a doubly linked list.  **O(1)** performance.
+
+* **insert_tail(value)** - takes a value and makes it the new tail, linking the old tail to it ant it back to the old tail in a doubly linked list.  **O(1)** performance.
+
+* **insert(i, value)** - takes a value and a number **i**.  THere are two ways to implement this, either the function inserts after the **i**th node, or after the node whose value is **i**.  Either way, the persformance is **O(n)**.
+
+* **remove_head()** - removes the head of the list and assigns the next value as the new head.  **O(1)** performance.
+
+* **remove_tail()** - removes the tail of the list and assigns the previous value as the new tail.  **O(1)** performance.
+
+* **remove(i)** - Either removes the **i**th entry from the list or searches for a value equal to **i**, then removes it. **O(n)** performance.
+
+* **size()** - returns the size of the list.  **O(1)** performance.
+
+* **empty()** - returns true is the list is empty. **O(1)** performance.
 
 ## Example
 
@@ -102,4 +122,7 @@ Lets quickly run through each of these functions.
 
 * *printMiddle(self)* is where the real solution to this problem lies.  There are two iterators here, one that jumps by 2's and another that jumps by 1's.  By the time the **iterEnd** reaches the end, **iterMiddle** will have gone half as far and be at the middle, so the function prints the data stored where **iterMiddle** elds up.
 
-As we can see, it's not as simple using a linked list.  You can't just pop out the value at an index, you have to iterate through every entry.  
+As we can see, it's not as simple using a linked list.  You can't just pop out the value at an index, you have to iterate through every entry.
+## Problem
+
+Implement a queue for a call center using a linked list.

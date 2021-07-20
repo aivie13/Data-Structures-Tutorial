@@ -9,6 +9,7 @@
 ## II. [Linked Lists](linkedLists.md)
 1. Introduction
 2. Linked vs Unlinked
+2. Functions
 3. Example 
 4. Problem
 ## III. [Trees](trees.md)

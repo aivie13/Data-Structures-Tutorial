@@ -72,9 +72,13 @@ So to bring it all together, recursion just means calling the function from with
 ## Functions
 Trees have many similar functions to linked lists, but since we add a dimension to traverse, the perfomance is a bit different.
 
-* **insert(value)** will insert a value into the tree.  It must traverse subtrees to compare with relative node values to find where the new value should be inserted.  Perfomance of **O(log n)**
+* **insert(value)** - will insert a value into the tree.  It must traverse subtrees to compare with relative node values to find where the new value should be inserted.  Perfomance of **O(log n)**.
 
-* 
+* **remove(value)** - will traverse the tree looking for a specified value and remove it.  The adjacent nodes will then need to be rearranged.  Perfomance of **O(log n)**.
+
+* **contains(value)** - takes a value and searches recursively through the tree to check if the value exists.  Perfomance of **O(log n)**.
+
+* **empty()** - returns true if the tree has no nodes.    Perfomance of **O(1)**.
 
 ## Example
 Let's implement a data structure and pay special attention to the recursion aspects.  

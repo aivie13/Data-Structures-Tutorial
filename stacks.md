@@ -55,7 +55,7 @@ def binary_search(arr, low, high, x):
 
 The program will successively split the list in half and search the smaller half. In a worst case scenario, the function will complete in time *O(log n)*
 
-Going back to the stack, the great thing about them is that all of the built in functions have efficiency *O(1)*.  The main drawback, however, is that its very inefficient to get to anyhting burried deeper into the stack.  They have a selective use case of anything that benefits from a FIFO (first in, first out) model.
+Going back to the stack, the great thing about them is that all of the built in functions have efficiency *O(1)*.  The main drawback, however, is that its very inefficient to get to anyhting burried deeper into the stack.  They have a selective use case of anything that benefits from a LIFO (last in, first out) model.
 
 ## Implementation
 
@@ -124,3 +124,6 @@ False
 True
 ```
 
+## Problem
+
+Implement a program to decode and calculate functional style math.  In functional programming, operations and numbers are added to a stack and simplified.  For example: 2 10 16 + * will first add 10 and 16, then multiply the product by 2.  Hint: you will need to read in a string and split it into numbers and operations.
