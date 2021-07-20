@@ -127,3 +127,5 @@ True
 ## Problem
 
 Implement a program to decode and calculate functional style math.  In functional programming, operations and numbers are added to a stack and simplified.  For example: 2 10 16 + * will first add 10 and 16, then multiply the product by 2.  Hint: you will need to read in a string and split it into numbers and operations.
+
+[Solution](stackProblem.py)
